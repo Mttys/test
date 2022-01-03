@@ -1,0 +1,12 @@
+local ESP = loadstring
+
+local esptoggle = dd:AddToggle("ESP", false, function(boolean)
+  ESP:Toggle = boolean
+ end)
+ 
+ local animations = dd:AddToggle("Animations", false, function(value)
+    if value == true then
+      matty.anims = true
+    else
+        matty.anims = false
+end)
